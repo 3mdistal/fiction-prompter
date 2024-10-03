@@ -17,18 +17,23 @@ export default async function getPrompt(useAI = true) {
   const pov = getRandomPOV();
   const weather = await getWeather(city.latitude, city.longitude);
 
-  const prompt = `Generate a creative writing prompt for a ${subgenre} story in the ${genre} genre. 
+  const prompt = `
+  Generate a creative writing prompt for a ${subgenre} story in the ${genre} genre. 
+  
   The story is set in ${city.city}, ${city.region}, ${city.country}. 
-  The main character works as a ${job}. 
+  
+  The story is strongly associated with the job: ${job}. 
+  
   The current local time is ${city.localTime}, and the weather is ${weather.weatherDescription} with a temperature of ${weather.temperature}°C. Be subtle about including these details. 
+  
   The story should be written from a ${pov.pov_types} perspective, in ${pov.person} form, with a ${pov.narrator_reliability} narrator. 
-  The narrative should have ${pov.knowledge_level} knowledge, be written in ${pov.tense} tense, with a ${pov.narrative_distance} narrative distance, 
-  and use ${pov.language_formality} language.
+  
+  The narrative should have ${pov.knowledge_level} knowledge, be written in ${pov.tense} tense, with a ${pov.narrative_distance} narrative distance, and use ${pov.language_formality} language.
   
   The prompt should be no more than 150 words.`;
 
   if (!useAI) {
-    return prompt;
+    return { prompt, city };
   }
 
   const response = await generateText({
@@ -36,5 +41,5 @@ export default async function getPrompt(useAI = true) {
     prompt,
   });
 
-  return response.text;
+  return { prompt: response.text, city };
 }

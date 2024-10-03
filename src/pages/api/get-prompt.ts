@@ -3,8 +3,8 @@ import getPrompt from "../../components/get-prompt";
 
 export const GET: APIRoute = async ({ params, request }) => {
   try {
-    const prompt = await getPrompt();
-    return new Response(JSON.stringify({ prompt }), {
+    const { prompt, city } = await getPrompt();
+    return new Response(JSON.stringify({ prompt, city }), {
       status: 200,
       headers: {
         "Content-Type": "application/json",
