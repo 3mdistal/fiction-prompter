@@ -1,0 +1,267 @@
+{
+  "genres": [
+    {
+      "name": "Non-Fiction",
+      "subgenres": [
+        "Biography",
+        "Autobiography",
+        "Memoir",
+        "Essay",
+        "Self-Help",
+        "Travel Writing",
+        "True Crime",
+        "History",
+        "Science",
+        "Philosophy",
+        "Politics",
+        "Journalism"
+      ]
+    },
+    {
+      "name": "Romance",
+      "subgenres": [
+        "Contemporary Romance",
+        "Historical Romance",
+        "Paranormal Romance",
+        "Erotic Romance",
+        "Romantic Suspense",
+        "Romantic Comedy",
+        "Gothic Romance",
+        "LGBTQ+ Romance"
+      ]
+    },
+    {
+      "name": "Mystery",
+      "subgenres": [
+        "Cozy Mystery",
+        "Hardboiled",
+        "Police Procedural",
+        "Amateur Sleuth",
+        "Whodunit",
+        "Noir",
+        "Legal Thriller",
+        "Medical Thriller"
+      ]
+    },
+    {
+      "name": "Thriller",
+      "subgenres": [
+        "Psychological Thriller",
+        "Crime Thriller",
+        "Political Thriller",
+        "Spy Thriller",
+        "Techno-thriller",
+        "Supernatural Thriller",
+        "Domestic Thriller"
+      ]
+    },
+    {
+      "name": "Science Fiction",
+      "subgenres": [
+        "Hard Science Fiction",
+        "Soft Science Fiction",
+        "Space Opera",
+        "Cyberpunk",
+        "Post-Apocalyptic",
+        "Dystopian",
+        "Time Travel",
+        "Alternate History",
+        "Military Sci-Fi",
+        "Steampunk"
+      ]
+    },
+    {
+      "name": "Fantasy",
+      "subgenres": [
+        "High Fantasy",
+        "Low Fantasy",
+        "Urban Fantasy",
+        "Epic Fantasy",
+        "Dark Fantasy",
+        "Sword and Sorcery",
+        "Magical Realism",
+        "Paranormal",
+        "Fairy Tale Retellings",
+        "Contemporary Fantasy"
+      ]
+    },
+    {
+      "name": "Horror",
+      "subgenres": [
+        "Gothic Horror",
+        "Supernatural Horror",
+        "Psychological Horror",
+        "Body Horror",
+        "Cosmic Horror",
+        "Slasher",
+        "Found Footage",
+        "Zombie",
+        "Vampire",
+        "Werewolf"
+      ]
+    },
+    {
+      "name": "Historical Fiction",
+      "subgenres": [
+        "Regency",
+        "Victorian",
+        "Medieval",
+        "Ancient Civilizations",
+        "World War Fiction",
+        "Western",
+        "Alternate History"
+      ]
+    },
+    {
+      "name": "Adventure",
+      "subgenres": [
+        "Action-Adventure",
+        "Survival",
+        "Exploration",
+        "Treasure Hunt",
+        "Lost World"
+      ]
+    },
+    {
+      "name": "Comedy",
+      "subgenres": [
+        "Satire",
+        "Parody",
+        "Black Comedy",
+        "Romantic Comedy",
+        "Slapstick",
+        "Sitcom",
+        "Screwball Comedy"
+      ]
+    },
+    {
+      "name": "Drama",
+      "subgenres": [
+        "Psychological Drama",
+        "Family Drama",
+        "Melodrama",
+        "Docudrama",
+        "Tragedy",
+        "Tragicomedy"
+      ]
+    },
+    {
+      "name": "Young Adult",
+      "subgenres": [
+        "Coming-of-Age",
+        "Teen Romance",
+        "YA Fantasy",
+        "YA Science Fiction",
+        "YA Mystery",
+        "YA Contemporary"
+      ]
+    },
+    {
+      "name": "Children's Literature",
+      "subgenres": [
+        "Picture Books",
+        "Middle Grade",
+        "Chapter Books",
+        "Educational"
+      ]
+    },
+    {
+      "name": "Literary Fiction",
+      "subgenres": [
+        "Modernist",
+        "Postmodernist",
+        "Experimental",
+        "Absurdist",
+        "Metafiction",
+        "Magical Realism"
+      ]
+    },
+    {
+      "name": "Speculative Fiction",
+      "subgenres": [
+        "Alternate Reality",
+        "Slipstream",
+        "New Weird",
+        "Bizarro Fiction",
+        "Climate Fiction (Cli-Fi)",
+        "Magical Realism"
+      ]
+    },
+    {
+      "name": "Experimental",
+      "subgenres": [
+        "Avant-Garde",
+        "Surrealism",
+        "Stream of Consciousness",
+        "Postmodern"
+      ]
+    },
+    {
+      "name": "Crime",
+      "subgenres": [
+        "Heist",
+        "Gangster",
+        "True Crime",
+        "Detective Fiction",
+        "Organized Crime"
+      ]
+    },
+    {
+      "name": "War",
+      "subgenres": ["Military Fiction", "War Drama", "Anti-War", "Espionage"]
+    },
+    {
+      "name": "Erotica",
+      "subgenres": ["BDSM", "LGBTQ+ Erotica", "Romantic Erotica"]
+    },
+    {
+      "name": "Experimental",
+      "subgenres": [
+        "Avant-Garde",
+        "Surrealism",
+        "Stream of Consciousness",
+        "Postmodern"
+      ]
+    },
+    {
+      "name": "Graphic Novels and Comics",
+      "subgenres": [
+        "Superhero",
+        "Manga",
+        "Webcomics",
+        "Graphic Memoir",
+        "Alternative Comics"
+      ]
+    },
+    {
+      "name": "Poetry",
+      "subgenres": [
+        "Epic Poetry",
+        "Lyric Poetry",
+        "Narrative Poetry",
+        "Haiku",
+        "Sonnet",
+        "Free Verse"
+      ]
+    },
+    {
+      "name": "Short Stories",
+      "subgenres": [
+        "Flash Fiction",
+        "Microfiction",
+        "Anthology",
+        "Linked Short Stories"
+      ]
+    },
+    {
+      "name": "Hybrid Genres",
+      "subgenres": [
+        "Romantic Thriller",
+        "Historical Fantasy",
+        "Science Fantasy",
+        "Horror Comedy",
+        "Weird Western"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "pov_types": [
+    { "value": "FIRST_PERSON", "weight": 30 },
+    { "value": "SECOND_PERSON", "weight": 5 },
+    { "value": "THIRD_PERSON", "weight": 40 },
+    { "value": "ALTERNATING", "weight": 5 },
+    { "value": "STREAM_OF_CONSCIOUSNESS", "weight": 3 },
+    { "value": "EPISTOLARY", "weight": 2 },
+    { "value": "COLLECTIVE_FIRST_PERSON", "weight": 2 },
+    { "value": "PERIPHERAL_NARRATOR", "weight": 3 },
+    { "value": "MULTIPLE_POV", "weight": 5 },
+    { "value": "CINEMATIC_OBJECTIVE", "weight": 2 },
+    { "value": "FRAME_NARRATIVE", "weight": 1 },
+    { "value": "RASHOMON_STYLE", "weight": 1 },
+    { "value": "POSTHUMOUS_NARRATION", "weight": 0.5 },
+    { "value": "NON_HUMAN_NARRATOR", "weight": 0.5 }
+  ],
+  "person": [
+    { "value": "SINGULAR", "weight": 80 },
+    { "value": "PLURAL", "weight": 20 }
+  ],
+  "narrator_reliability": [
+    { "value": "RELIABLE", "weight": 60 },
+    { "value": "UNRELIABLE", "weight": 20 },
+    { "value": "NAIVE", "weight": 10 },
+    { "value": "BIASED", "weight": 8 },
+    { "value": "MENTALLY_UNSTABLE", "weight": 2 }
+  ],
+  "knowledge_level": [
+    { "value": "LIMITED", "weight": 40 },
+    { "value": "OMNISCIENT", "weight": 30 },
+    { "value": "OBJECTIVE", "weight": 20 },
+    { "value": "SUBJECTIVE", "weight": 10 }
+  ],
+  "tense": [
+    { "value": "PRESENT", "weight": 20 },
+    { "value": "PAST", "weight": 70 },
+    { "value": "FUTURE", "weight": 5 },
+    { "value": "MIXED", "weight": 5 }
+  ],
+  "narrative_distance": [
+    { "value": "DEEPLY_PERSONAL", "weight": 40 },
+    { "value": "NEUTRAL", "weight": 40 },
+    { "value": "DETACHED", "weight": 20 }
+  ],
+  "language_formality": [
+    { "value": "FORMAL", "weight": 30 },
+    { "value": "INFORMAL", "weight": 60 },
+    { "value": "MIXED", "weight": 5 },
+    { "value": "DIALECT", "weight": 5 }
+  ]
+}
