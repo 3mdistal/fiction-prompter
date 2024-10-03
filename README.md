@@ -1,33 +1,60 @@
-# Astro Starter Kit: Minimal
+# Fiction Prompter
 
-```sh
-npm create astro@latest -- --template minimal
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Fiction Prompter is an Astro-based web application that generates creative writing prompts for fiction writers. It uses AI-powered generation to create unique and inspiring prompts based on various parameters.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+The project structure is as follows:
 
 ```text
 /
 ├── public/
+│ └── favicon.svg
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│ ├── components/
+│ │ ├── gemini.ts
+│ │ ├── get-prompt.ts
+│ │ ├── get-random-city.ts
+│ │ ├── get-random-genre.ts
+│ │ ├── get-random-job-based-on-city.ts
+│ │ └── get-random-pov.ts
+│ ├── data/
+│ │ ├── genres.json
+│ │ └── povs.json
+│ ├── pages/
+│ │ ├── api/
+│ │ │ └── get-prompt.ts
+│ │ └── index.astro
+│ └── env.d.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🧞 Key Features
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Generates creative writing prompts using AI (Gemini Pro)
+- Randomly selects cities, jobs, genres, and points of view for diverse prompts
+- Server-side rendering with Astro
+- TypeScript support for improved development experience
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🎨 How It Works
+
+The Fiction Prompter generates unique writing prompts by:
+1. Selecting a random city using a geographic API
+2. Generating a job based on the selected city using AI
+3. Choosing a random genre and subgenre from a predefined list
+4. Selecting a random point of view (POV) with various narrative aspects
+5. Combining all these elements to create a comprehensive writing prompt using AI
+
+This process ensures a wide variety of creative and inspiring prompts for writers.
+
+## 🛠️ Technologies Used
+
+- [Astro](https://astro.build) - Web framework for content-driven websites
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+- [AI SDK](https://github.com/vercel/ai) - AI library for text generation
+- [Google Generative AI](https://ai.google.dev/) - Gemini Pro model for AI-powered text generation
 
 ## 🧞 Commands
 
@@ -42,6 +69,14 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## 🚀 Getting Started
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Set up your Gemini API key in the environment variables
+4. Run the development server with `npm run dev`
+5. Open your browser and navigate to `http://localhost:4321`
+
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [Astro documentation](https://docs.astro.build) for more information on how to customize and extend this project.

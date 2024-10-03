@@ -1,22 +1,21 @@
 import { geminiFlash } from "./gemini";
-import { generateText } from "ai";
+import { generateObject } from "ai";
+import { z } from "zod";
 
 export default async function getRandomJobBasedOnCity(
   city: string,
   region: string,
   country: string
 ) {
-  const { text } = await generateText({
+  const result = await generateObject({
     model: geminiFlash,
-    prompt: `Generate a list of 50 careers likely found in ${city}, ${region}, ${country}. Only the list, no other text.`,
+    schema: z.object({
+      careers: z.array(z.string()),
+    }),
+    prompt: `Generate a list of 10 careers strongly associated with ${city}, ${region}, ${country}.`,
   });
-  // Parse the text into an array of careers
-  const careers = text
-    .split(/\n/)
-    .map((career) => career.trim())
-    .filter((career) => career.length > 0)
-    .map((career) => career.replace(/^\d+\.\s*/, "")); // Remove numbering if present
 
+  const careers = result.object.careers;
   const randomIndex = Math.floor(Math.random() * careers.length);
   return careers[randomIndex];
 }
