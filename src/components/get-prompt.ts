@@ -1,4 +1,4 @@
-import { geminiPro } from "./gemini";
+import { geminiFlash8b } from "./gemini";
 import { generateText } from "ai";
 import getRandomCity from "./get-random-city";
 import getRandomJobBasedOnCity from "./get-random-job-based-on-city";
@@ -37,7 +37,7 @@ export default async function getPrompt(useAI = true) {
   }
 
   const response = await generateText({
-    model: geminiPro,
+    model: geminiFlash8b,
     prompt,
   });
 

@@ -1,4 +1,4 @@
-import { geminiFlash } from "./gemini";
+import { geminiFlash, geminiFlash8b } from "./gemini";
 import { generateObject } from "ai";
 import { z } from "zod";
 
@@ -8,7 +8,7 @@ export default async function getRandomJobBasedOnCity(
   country: string
 ) {
   const result = await generateObject({
-    model: geminiFlash,
+    model: geminiFlash8b,
     schema: z.object({
       careers: z.array(z.string()),
     }),
